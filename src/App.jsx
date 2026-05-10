@@ -6,6 +6,8 @@ import Skills from './components/sections/Skills'
 import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 import Competitive from './components/sections/Competitive'
+import Education from './components/sections/Education'
+import Achievements from './components/sections/Achievements'
 
 export default function App() {
   return (
@@ -24,6 +26,10 @@ export default function App() {
         <Projects />
 
         <Competitive />
+
+        <Education />
+
+        <Achievements />
 
         <section id="contact" className="min-h-screen flex items-center justify-center">
           <p className="text-slate-400 text-lg">Contact — coming soon</p>
