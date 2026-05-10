@@ -50,20 +50,20 @@ export default function About() {
           <div className="flex-1">
             <FadeInSection delay={0.1}>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-4">
-                I'm a Backend Software Engineer from Dhaka, Bangladesh, with a B.Sc. in CSE
-                from Daffodil International University. My journey started with C++ and algorithms
-                — I was an executive member of the{' '}
-                <span className="text-blue-600 font-medium">DIU Computer Programming Club</span>,
-                where I organized programming contests and boot camps. That foundation led me to
-                solve{' '}
-                <span className="text-blue-600 font-medium">200+ problems</span> on LeetCode
-                and HackerRank.
+                I'm a Software Engineer specializing in backend development with{' '}
+                <span className="text-blue-600 font-medium">Spring Boot</span>, passionate about
+                designing scalable and efficient systems.
+              </p>
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-4">
+                I graduated from Daffodil International University with a degree in Computer Science
+                and Engineering, where I also served as an executive member of the{' '}
+                <span className="text-blue-600 font-medium">Computer Programming Club</span>.
+                Organizing programming contests, seminars, and boot camps not only strengthened my
+                technical foundation but also nurtured my leadership and teamwork skills.
               </p>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-10">
-                Today I work at PIS as a Jr. Back-End Developer, building microservice
-                architectures with Spring Cloud, Docker, and PostgreSQL. I'm passionate about
-                system design, cloud computing, and DevOps — always looking to engineer software
-                that truly scales.
+                I enjoy solving complex problems with simple, reliable solutions and continuously
+                seek opportunities to grow as a professional while contributing to impactful projects.
               </p>
             </FadeInSection>
 
