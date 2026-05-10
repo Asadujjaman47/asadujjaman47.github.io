@@ -1,6 +1,7 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
+import About from './components/sections/About'
 
 export default function App() {
   return (
@@ -10,9 +11,7 @@ export default function App() {
       <main>
         <Hero />
 
-        <section id="about" className="min-h-screen flex items-center justify-center">
-          <p className="text-slate-400 text-lg">About — coming soon</p>
-        </section>
+        <About />
 
         <section id="skills" className="min-h-screen flex items-center justify-center">
           <p className="text-slate-400 text-lg">Skills — coming soon</p>
