@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-slate-200 py-8 mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-slate-500 text-sm">
-          © {new Date().getFullYear()} Md. Asadujjaman. Built with React & Tailwind CSS.
+          © {new Date().getFullYear()} Asadujjaman
         </p>
         <div className="flex items-center gap-4">
           <a
