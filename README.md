@@ -1,16 +1,29 @@
-# React + Vite
+# Md. Asadujjaman — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+**Live:** [asadujjaman47.github.io](https://asadujjaman47.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **Vite + React 19**
+- **Tailwind CSS v4**
+- **Framer Motion** — animations & scroll transitions
+- **EmailJS** — contact form (no backend)
+- **GitHub Actions** — CI/CD deploy to GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the ESLint configuration
+Hero · About · Skills · Experience · Projects · Competitive Programming · Education · Honors & Certifications · Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+```bash
+npm install
+cp .env.example .env   # add your EmailJS keys
+npm run dev
+```
+
+## Deploy
+
+Push to `dev` branch — GitHub Actions builds and deploys to `main` automatically.
