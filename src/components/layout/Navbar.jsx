@@ -40,7 +40,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold text-blue-600 tracking-tight hover:text-blue-700 transition-colors"
           >
-            Asad.
+            &lt;/&gt;
           </button>
 
           {/* Desktop links */}
