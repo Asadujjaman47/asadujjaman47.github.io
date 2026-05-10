@@ -13,11 +13,27 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const observers = []
+    navLinks.forEach(({ id }) => {
+      const el = document.getElementById(id)
+      if (!el) return
+      const observer = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActiveSection(id) },
+        { threshold: 0.3, rootMargin: '-64px 0px -30% 0px' }
+      )
+      observer.observe(el)
+      observers.push(observer)
+    })
+    return () => observers.forEach(o => o.disconnect())
   }, [])
 
   const scrollToSection = (id) => {
@@ -49,7 +65,11 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  activeSection === link.id
+                    ? 'text-blue-600'
+                    : 'text-slate-600 hover:text-blue-600'
+                }`}
               >
                 {link.label}
               </button>
@@ -81,7 +101,11 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-left px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors"
+                  className={`text-left px-4 py-2.5 text-sm font-medium rounded-lg transition-colors ${
+                    activeSection === link.id
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-slate-600 hover:text-blue-600 hover:bg-slate-50'
+                  }`}
                 >
                   {link.label}
                 </button>
