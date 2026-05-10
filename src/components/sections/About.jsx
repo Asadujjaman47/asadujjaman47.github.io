@@ -77,24 +77,24 @@ export default function About() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-                    className={`rounded-xl p-5 text-center border ${
+                    className={`rounded-xl p-3 text-center border ${
                       isOpenToWork
                         ? 'bg-green-50 border-green-200'
                         : 'bg-slate-50 border-slate-200'
                     }`}
                   >
                     {isOpenToWork ? (
-                      <div className="flex flex-col items-center justify-center gap-2">
+                      <div className="flex flex-col items-center justify-center gap-1.5">
                         <motion.span
                           animate={{ scale: [1, 1.5, 1], opacity: [1, 0.3, 1] }}
                           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-                          className="block w-3 h-3 rounded-full bg-green-500"
+                          className="block w-2.5 h-2.5 rounded-full bg-green-500"
                         />
                         <p className="text-xs font-semibold text-green-700">Open to Work</p>
                       </div>
                     ) : (
                       <>
-                        <p className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
+                        <p className="text-xl sm:text-2xl font-bold text-blue-600 mb-0.5">
                           {stat.value}
                         </p>
                         <p className="text-xs text-slate-500 leading-tight">{stat.label}</p>
