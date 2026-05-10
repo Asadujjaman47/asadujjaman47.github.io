@@ -21,7 +21,7 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16">
         <SectionTitle
           title="About Me"
           subtitle="A little about who I am and what drives me"
