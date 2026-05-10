@@ -1,5 +1,6 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Hero from './components/sections/Hero'
 
 export default function App() {
   return (
@@ -7,9 +8,7 @@ export default function App() {
       <Navbar />
 
       <main>
-        <section id="hero" className="min-h-screen flex items-center justify-center">
-          <p className="text-slate-400 text-lg">Hero — coming soon</p>
-        </section>
+        <Hero />
 
         <section id="about" className="min-h-screen flex items-center justify-center">
           <p className="text-slate-400 text-lg">About — coming soon</p>
