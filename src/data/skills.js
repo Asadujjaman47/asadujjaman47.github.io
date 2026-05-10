@@ -1,11 +1,11 @@
 export const skillGroups = [
   {
     label: 'Languages',
-    skills: ['Java', 'JavaScript', 'Python', 'Go'],
+    skills: ['Java', 'C++', 'JavaScript', 'Python', 'Go'],
   },
   {
     label: 'Frameworks',
-    skills: ['Spring Boot', 'Spring Cloud', 'Spring Security'],
+    skills: ['Spring Boot', 'Node.js', 'FastAPI'],
   },
   {
     label: 'Cloud & DevOps',
