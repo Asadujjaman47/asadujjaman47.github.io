@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { HiCode, HiTemplate, HiCloud, HiSwitchHorizontal, HiDatabase, HiCog } from 'react-icons/hi'
+import { HiCode, HiTemplate, HiCloud, HiSwitchHorizontal, HiDatabase, HiCog, HiCube, HiChartBar } from 'react-icons/hi'
 import SectionTitle from '../ui/SectionTitle'
 import SkillBadge from '../ui/SkillBadge'
 import { skillGroups } from '../../data/skills'
@@ -8,9 +8,11 @@ import { skillGroups } from '../../data/skills'
 const groupIcons = {
   'Languages': HiCode,
   'Frameworks': HiTemplate,
+  'Architecture': HiCube,
   'Cloud & DevOps': HiCloud,
   'Messaging & Cache': HiSwitchHorizontal,
   'Databases': HiDatabase,
+  'Observability': HiChartBar,
   'Tools': HiCog,
 }
 
