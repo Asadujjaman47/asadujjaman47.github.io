@@ -2,7 +2,7 @@ export const experiences = [
   {
     company: 'PIS',
     role: 'Junior Backend Developer',
-    period: 'Oct 2024 – Present',
+    period: 'Oct 2023 – Present',
     tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker'],
     bullets: [
       'Develop and maintain backend services using Java, Spring Boot, PostgreSQL, Redis, and RabbitMQ.',
