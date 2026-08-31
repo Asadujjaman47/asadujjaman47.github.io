@@ -104,8 +104,8 @@ export default function Hero() {
                 View My Work
               </button>
               <a
-                href="/Asadujjaman_CV.pdf"
-                download
+                href="/Asadujjaman_resume.pdf"
+                download="Asadujjaman_resume.pdf"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold rounded-lg transition-all duration-200"
               >
                 <HiDownload size={18} />
