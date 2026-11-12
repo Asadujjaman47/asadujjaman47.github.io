@@ -21,7 +21,7 @@ export const skillGroups = [
   },
   {
     label: 'Cloud & DevOps',
-    skills: ['Linux', 'Docker', 'GitHub Actions', 'AWS'],
+    skills: ['Linux', 'Docker', 'GitHub Actions', 'AWS', 'Azure'],
   },
   {
     label: 'Observability',

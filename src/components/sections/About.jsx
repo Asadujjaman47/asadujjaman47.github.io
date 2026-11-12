@@ -5,7 +5,7 @@ import SectionTitle from '../ui/SectionTitle'
 import FadeInSection from '../ui/FadeInSection'
 
 const stats = [
-  { value: '2+', label: 'Years Experience' },
+  { value: '3+', label: 'Years Experience' },
   { value: '200+', label: 'DSA Problems Solved' },
   { value: 'DIU', label: 'B.Sc. CSE' },
   { value: null, label: 'Open to Work' },

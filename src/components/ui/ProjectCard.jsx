@@ -4,6 +4,9 @@ import { SiGithub } from 'react-icons/si'
 export default function ProjectCard({ project }) {
   return (
     <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col h-full hover:shadow-md transition-shadow">
+      {project.label && (
+        <p className="text-xs font-medium text-blue-600 mb-1">{project.label}</p>
+      )}
       <h3 className="text-base font-semibold text-slate-800 mb-2">{project.name}</h3>
       <p className="text-sm text-slate-500 leading-relaxed mb-4 flex-1">{project.description}</p>
 
@@ -16,15 +19,20 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="flex gap-2">
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-600 transition-colors"
-        >
-          <SiGithub size={13} />
-          GitHub
-        </a>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-600 transition-colors"
+          >
+            <SiGithub size={13} />
+            GitHub
+          </a>
+        )}
+        {!project.github && !project.live && (
+          <span className="text-xs text-slate-400 py-1.5">Private company codebase</span>
+        )}
         {project.live && (
           <a
             href={project.live}

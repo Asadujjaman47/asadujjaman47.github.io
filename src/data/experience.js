@@ -1,25 +1,24 @@
 export const experiences = [
   {
-    company: 'PIS',
-    role: 'Junior Backend Developer',
-    period: 'Oct 2023 – Present',
-    tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker'],
+    company: 'Proficient Information Systems',
+    role: 'Junior Software Engineer',
+    period: 'Oct 2023 – Nov 2026',
+    tags: ['Java', 'Spring Boot', 'Spring Cloud', 'PostgreSQL', 'Redis', 'RabbitMQ', 'Docker'],
     bullets: [
-      'Develop and maintain backend services using Java, Spring Boot, PostgreSQL, Redis, and RabbitMQ.',
-      'Build RESTful APIs following clean architecture principles and clear module boundaries.',
-      'Collaborate in Agile sprints, code reviews, debugging, and production support.',
-      'Containerize applications with Docker and contribute to reliability improvements.',
+      'Delivered features for 4 products: Investar OMS, Investar Remittance, Confidence ERP, and Penny Perfect accounting.',
+      'Helped migrate Investar from a monolith to Spring Cloud microservices with Eureka, API Gateway, and Config Server.',
+      'Owned features end to end: design, code review, QA verification, Docker deployment, and production support.',
     ],
   },
   {
     company: 'ERA Info Tech',
-    role: 'Backend Development Intern',
+    role: 'Software Engineer Intern',
     period: 'Apr 2023 – Sep 2023',
-    tags: ['Spring Boot', 'Oracle', 'JPA'],
+    tags: ['Spring Boot', 'Oracle', 'REST APIs'],
     bullets: [
-      'Learned enterprise backend development using Spring Boot and Oracle Database.',
-      'Built REST APIs and practiced layered architecture and dependency injection.',
-      'Worked with mentors on backend development best practices.',
+      'Worked on the General Ledger module team of a Core Banking System and learned core accounting fundamentals.',
+      'Enhanced GL reports and the journal-posting screen: added missing fields and a parent-child tree view for detailed records.',
+      'Built REST APIs with Spring Boot and Oracle Database using layered architecture and dependency injection.',
     ],
   },
 ]

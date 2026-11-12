@@ -172,7 +172,7 @@ export default function Hero() {
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -bottom-3 -right-3 bg-white border border-slate-200 rounded-xl px-3 py-1.5 shadow-lg"
               >
-                <p className="text-xs font-semibold text-slate-700">2+ Years Exp.</p>
+                <p className="text-xs font-semibold text-slate-700">3+ Years Exp.</p>
               </motion.div>
             </div>
           </motion.div>
